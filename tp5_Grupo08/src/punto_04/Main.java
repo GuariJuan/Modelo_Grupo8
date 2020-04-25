@@ -10,7 +10,7 @@ public class Main {
 
 		persona[0]= new Thread(transaccion,"Padre");
 		persona[1]= new Thread(transaccion,"Madre");
-		persona[2]= new Thread(transaccion,"Tío");
+		persona[2]= new Thread(transaccion,"Tio");
 		persona[3]= new Thread(transaccion,"Hijo Mayor");
 		persona[4]= new Thread(transaccion,"Hijo Medio");
 		persona[5]= new Thread(transaccion,"Hijo Menor");
