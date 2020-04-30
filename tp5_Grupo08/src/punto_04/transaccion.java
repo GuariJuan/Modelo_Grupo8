@@ -1,13 +1,14 @@
 package punto_04;
 
 public class transaccion implements Runnable{
-
 	cuentaBancaria miCuentaBancaria = new cuentaBancaria();
 		
 	@Override
 	public void run() {
 		int valor;
-		int numero= (int) (Math.random() * 100) + 1;;
+		int numero= (int) (Math.random() * 100) + 1;
+		
+		
 		for(int i=0;i<3;i++) {
 			try {
 				if( (Thread.currentThread().getName()=="Padre")||(Thread.currentThread().getName()=="Madre")||

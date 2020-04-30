@@ -16,6 +16,16 @@ public class Main {
 		persona[5]= new Thread(transaccion,"Hijo Menor");
 		persona[6]= new Thread(transaccion,"Hija");
 		
+	/*	try {
+		synchronized(i) {
+		for (int i=0;i<6;i++) {
+			persona[i].start();
+		}
+		}
+		}catch(InterruptedException e ) {
+			
+		}*/
+		
 		persona[0].start();
 		persona[1].start();
 		persona[2].start();
